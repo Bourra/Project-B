@@ -52,7 +52,8 @@ namespace ProjectPartB_B1
 
             while (roundNumber <= nrOfRounds)
             {
-
+                player1 = new HandOfCards();
+                player2 = new HandOfCards();
                 Console.WriteLine("------------------");
                 Console.WriteLine($"Playing round nr {roundNumber}");
                 Console.WriteLine("------------------");
@@ -111,33 +112,6 @@ namespace ProjectPartB_B1
                 return false;
             }
 
-
-            /*int chosenCardNumber = 0;
-            bool validNumber = false;
-            while (validNumber == false)
-            {
-                try
-                {
-                    Console.WriteLine("How many cards to deal to each player (1-5 or Q to quit)?");
-                    chosenCardNumber = Convert.ToInt32(Console.ReadLine());
-                    if (chosenCardNumber > 0 && chosenCardNumber < 6)
-                    {
-                        validNumber = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Not a valid number of cards, pls try again!");
-                    }
-
-                }
-                catch
-                {
-                    Console.WriteLine("Wrong input try again");
-                }
-
-            }
-            NrOfCards = chosenCardNumber;
-            return true;*/
         }
 
 
@@ -150,29 +124,7 @@ namespace ProjectPartB_B1
         /// <returns>true - if value could be read and converted. Otherwise false</returns>
         private static bool TryReadNrOfRounds(out int NrOfRounds)
         {
-            /*        int chosenCardNumber = 0;
-                    bool validNumber = false;
-                    while (validNumber == false)
 
-                        try
-                        {
-                            Console.WriteLine("How many rounds should we play (1-5 or Q to quit)?");
-                            NrOfRounds = Convert.ToInt32(Console.ReadLine());
-                            if (NrOfRounds > 0 && NrOfRounds < 6)
-                            {
-                                validNumber = true;
-                            }
-                            else
-                            {
-                                Console.WriteLine("Not a valid number of rounds, pls try again!");
-                            }
-                        }
-                        catch
-                        {
-                            Console.WriteLine("Wrong input try again");
-                        }
-
-                    return validNumber;*/
 
             Console.WriteLine("How many rounds should we play (1-5 or Q to quit)?");
             string input = Console.ReadLine();
@@ -199,14 +151,6 @@ namespace ProjectPartB_B1
                 return false;
             }
 
-
-            /* Console.WriteLine("How many rounds should we play (1-5 or Q to quit)?");
-             NrOfRounds = Convert.ToInt32(Console.ReadLine());
-             if (NrOfRounds > 0 && NrOfRounds < 6)
-             {
-                 return true;
-             }
-             return false;*/
         }
 
 

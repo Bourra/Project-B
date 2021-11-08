@@ -19,7 +19,6 @@ namespace ProjectPartB_B1
                 return cards[idx];
             }
         }
-        //public int Count => cards.Count;
 
         public int Count
         {

@@ -20,6 +20,7 @@ namespace ProjectPartB_B1
             Console.WriteLine(myDeck);
             Console.WriteLine();
 
+
             Console.WriteLine("Do you wanna play a game of cards? Press any key to continue!");
             Console.ReadKey();
             Console.Clear();
@@ -52,8 +53,7 @@ namespace ProjectPartB_B1
 
             while (roundNumber <= nrOfRounds)
             {
-                player1 = new HandOfCards();
-                player2 = new HandOfCards();
+
                 Console.WriteLine("------------------");
                 Console.WriteLine($"Playing round nr {roundNumber}");
                 Console.WriteLine("------------------");
@@ -71,6 +71,8 @@ namespace ProjectPartB_B1
                 DetermineWinner(player1, player2);
                 Console.WriteLine();
                 roundNumber++;
+                player1.Clear();
+                player2.Clear();
             }
 
 
